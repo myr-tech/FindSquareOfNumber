@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./fullname.js"></script>
+    <title>inputbyuser</title>
+</head>
+<body>
+    <h1>Find the square of number</h1>
+    <span>Enter the number</span>
+    <input type="number" id="squarenum" value="" placeholder="please enter number here"  />
+    <input type="button" value="FindSquare" onclick="findsqofnumberenter()"/>
+    Result: <span id="squreresult"></span>
+    
+    <script>
+        function findsqofnumberenter() {
+            var squareNumber= document.getElementById("squarenum").value;
+        var sq = findsqof(squareNumber);
+        console.log('squre of number',sq);
+        }
+        
+   
+    </script>
+</body>
+</html>
